@@ -1,0 +1,48 @@
+/* src/reset.css */
+
+/* Убираем внешние и внутренние отступы у всех элементов */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Улучшаем плавность прокрутки */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Убираем стандартные маркеры у списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Убираем подчеркивание у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Делаем изображения адаптивными */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Убираем стандартные рамки и делаем шрифты наследуемыми для полей ввода */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Убираем лишние отступы у заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* Для более четкого текста на Mac */
+}
